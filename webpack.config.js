@@ -21,10 +21,18 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
-    })
+      template: './src/index.html',
+    }),
   ],
   devServer: {
-    port: 3000
+    port: 3000,
+    proxy: [
+      {
+        context: ['/api'],
+        target: 'https://ruby-web-pr9094.pr.testing.vivino.com/api',
+        pathRewrite: { '^/api': '' },
+        changeOrigin: true,
+      },
+    ]
   }
 };
