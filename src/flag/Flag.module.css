@@ -1,0 +1,15 @@
+.root {
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #D0D3D4;
+    box-shadow: #D0D3D4 0px 0px 4px;
+}

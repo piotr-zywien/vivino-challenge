@@ -4,15 +4,15 @@ export const mapToPresentableWine = (inputWine: InputWineInfo): PresentableWineI
     const {
         price: { url },
         vintage: {
+            id,
             wine: {
-                id,
                 winery: { name: wineryName },
                 region: {
                     name: regionName,
                     country: { code, name: countryName },
                 },
             },
-            image: { location },
+            image: { variations: { bottle_small } },
             name: wineName,
             statistics: {
                 wine_ratings_average,
@@ -24,7 +24,7 @@ export const mapToPresentableWine = (inputWine: InputWineInfo): PresentableWineI
 
     return {
         id,
-        imageUrl: location,
+        imageUrl: bottle_small,
         wineName,
         wineUrl: url,
         winery: wineryName,

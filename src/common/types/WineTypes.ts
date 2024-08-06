@@ -11,8 +11,8 @@ export interface InputWineInfo {
     };
     prices: object[];
     vintage: {
+        id: number;
         wine: {
-            id: number;
             winery: {
                 name: string;
             };
@@ -22,7 +22,9 @@ export interface InputWineInfo {
             },
         };
         image: {
-            location: string;
+            variations: {
+                bottle_small: string,
+            };
         };
         name: string;
         statistics: {
@@ -33,7 +35,7 @@ export interface InputWineInfo {
     };
 }
 
-export default interface PresentableWineRatings {
+export interface PresentableWineRatings {
     ratingsAverage: number;
     ratingsCount: number;
 }

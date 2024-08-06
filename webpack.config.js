@@ -16,6 +16,24 @@ module.exports = {
         test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
         use: 'babel-loader'
+      },
+      {
+        test: /\.css$/i,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              url: false,
+              importLoaders: 1,
+              modules: true
+            }
+          }
+        ]
+      },
+      {
+        test: /\.svg/,
+        type: 'asset/inline'
       }
     ]
   },

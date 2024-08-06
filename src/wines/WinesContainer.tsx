@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Wines from './Wines';
 import WinesResource from './WinesResource';
+import { PresentableWineInfo } from '../common/types/WineTypes';
 
 const WinesContainer = () => {
-    WinesResource().then((response) => {
-        console.log(response);
-    });
-    return <Wines />;
+    const [wines, setWines] = useState<PresentableWineInfo[]>([]);
+
+    useEffect(() => {
+        WinesResource().then((response) => {
+            setWines(response);
+        });
+    }, []);
+
+    return <Wines dataList={wines} />;
 };
 
 export default WinesContainer;

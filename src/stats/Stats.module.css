@@ -1,0 +1,16 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.stars {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    flex-direction: row;
+}
+
+.average {
+    font-size: 32px;
+}

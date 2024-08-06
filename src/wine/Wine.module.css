@@ -1,0 +1,64 @@
+.root {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #D0D3D4;
+    border-radius: 8px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-shadow: #D0D3D4 0px 0px 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 250px;
+    width: 850px;
+}
+
+.bottle {
+    position: absolute;
+    bottom: 8px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    margin-left: 100px;
+    max-width: 500px;
+}
+
+.winery {
+    color: #7B7D7D;
+;}
+
+.name {
+    font-weight: bold;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.link {
+    font-weight: inherit;
+    color: inherit;
+}
+
+.link:hover {
+    color: #7B7D7D;
+}
+
+.region {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    color: #7B7D7D;
+}
+
+.stats {
+    position: absolute;
+    padding: 36px;
+    right: 0;
+}

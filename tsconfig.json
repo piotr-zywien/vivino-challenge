@@ -6,7 +6,10 @@
     "moduleResolution": "node",
     "outDir": "./dist",
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },
-  "include": ["src/**/*"]
+  "include": [
+    "src/**/*"
+  ]
 }
