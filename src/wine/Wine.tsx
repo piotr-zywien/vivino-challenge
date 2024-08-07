@@ -18,8 +18,8 @@ const Wine = ({ data }: WineProps) => (
                 <a className={styles.link} target="_blank" href={data.wineUrl} >{data.wineName}</a>
             </span>
             <div className={styles.region}>
-                <Flag country={data.country} />
-                {`${data.regionName}, ${data.country.name}`}
+                <Flag country={data.country.code} />
+                <span className={styles.regionText}>{`${data.regionName}, ${data.country.name}`}</span>
             </div>
         </div>
         <div className={styles.stats}>

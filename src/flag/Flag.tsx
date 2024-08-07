@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
-import { Country } from '../common/types/WineTypes';
+import CountriesEnum from '../common/enums/CountriesEnum';
 import * as styles from './Flag.module.css';
 
 interface FlagProps {
-    country: Country;
+  country: CountriesEnum;
 }
 
 const Flag = ({ country }: FlagProps) => {
@@ -12,7 +12,7 @@ const Flag = ({ country }: FlagProps) => {
 
     useEffect(() => {
         (async () => {
-            const response = await import(`../common/assets/${country.code}.svg`);
+            const response = await import(`../common/assets/${country}.svg`);
             setImage(response.default)
         })();
     }, [country]);

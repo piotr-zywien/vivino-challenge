@@ -6,14 +6,13 @@
     border-style: solid;
     border-color: #D0D3D4;
     border-radius: 8px;
-    margin-top: 24px;
+    margin-top: 80px;
     margin-bottom: 24px;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 24px;
     padding-right: 24px;
     box-shadow: #D0D3D4 0px 0px 4px;
-    font-family: Arial, Helvetica, sans-serif;
     height: 250px;
     width: 850px;
 }
@@ -44,10 +43,10 @@
 .link {
     font-weight: inherit;
     color: inherit;
-}
 
-.link:hover {
-    color: #7B7D7D;
+    &:hover {
+        color: #7B7D7D;
+    }
 }
 
 .region {
@@ -55,6 +54,12 @@
     align-items: center;
     font-size: 14px;
     color: #7B7D7D;
+}
+
+.regionText {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 4px;
 }
 
 .stats {

@@ -1,0 +1,29 @@
+.root {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 128px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    margin: 4px;
+}
+
+.flag {
+    width: fit-content;
+    padding: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7B7D7D;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.faded {
+    opacity: 30%;
+
+    &:hover {
+        opacity: 100%;
+    }
+}
+
