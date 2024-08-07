@@ -26,6 +26,7 @@ const WinesContainer = () => {
     const hasCountry = (country: CountriesEnum) => countries.includes(country);
 
     const onSearch = () => {
+      setWines([]);
       setIsLoading(true);
       WinesResource(countries).then((response) => {
         setWines(response);

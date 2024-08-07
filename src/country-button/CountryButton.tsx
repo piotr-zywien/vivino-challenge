@@ -17,10 +17,10 @@ const CountryButton = ({ country, hasCountry, onClick }: CountryButtonProps) => 
     className={classNames(styles.root, { [styles.faded]: !hasCountry })}
     onClick={onClick}
     >
-    <div className={styles.flag}>
-    <Flag country={country} />
-    </div>
-    {getCountryName(country)}
+        <div className={styles.flag}>
+            <Flag country={country} />
+        </div>
+        {getCountryName(country)}
     </button>
 );
 

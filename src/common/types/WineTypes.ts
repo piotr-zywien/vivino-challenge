@@ -50,5 +50,4 @@ export interface PresentableWineInfo {
     country: Country;
     ratings: PresentableWineRatings;
     year: number;
-
 }
