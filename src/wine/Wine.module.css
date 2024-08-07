@@ -19,7 +19,7 @@
 
 .bottle {
     position: absolute;
-    bottom: 8px;
+    bottom: 20px;
 }
 
 .info {
@@ -54,6 +54,7 @@
     align-items: center;
     font-size: 14px;
     color: #7B7D7D;
+    margin-top: 4px;
 }
 
 .regionText {
